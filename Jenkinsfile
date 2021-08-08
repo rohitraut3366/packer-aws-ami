@@ -7,6 +7,7 @@ pipeline{
             steps{
                 echo "Build Started"
                 git branch: 'master', url: 'https://github.com/rohitraut3366/packer-aws-ami.git'
+                sh "chmod 400 devops.pem"
                 sh "packer build -force ."
                 echo "Build Ended"
             }
