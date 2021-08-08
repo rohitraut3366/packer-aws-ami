@@ -1,9 +1,9 @@
 pipeline{
     agent { 
-        label packer
+        label "packer"
     }
     stages{
-        stage("packer"){
+        stage("packer-build"){
             steps{
                 echo "Build Started"
                 git branch: 'master', url: 'https://github.com/rohitraut3366/packer-aws-ami.git'
