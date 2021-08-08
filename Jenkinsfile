@@ -1,5 +1,7 @@
 pipeline{
-    agent packer
+    agent { 
+        label packer
+    }
     stages{
         stage("packer"){
             steps{
