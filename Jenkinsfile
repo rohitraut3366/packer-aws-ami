@@ -6,7 +6,7 @@ pipeline{
             // }
             steps{
                 echo "Build Started"
-                git url: "https://github.com/rohitraut3366/packer-aws-ami.git" branch: "master"
+                git branch: 'master', url: 'https://github.com/rohitraut3366/packer-aws-ami.git'
                 echo "Build Ended"
             }
             post{
