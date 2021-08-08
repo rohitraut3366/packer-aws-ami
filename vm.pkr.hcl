@@ -51,7 +51,7 @@ build {
       inventory_file = "./inventory/"
       use_proxy= false
       ansible_env_vars= [
-        "ANSIBLE_CONFIG=ansible.cfg" 
+        "ANSIBLE_CONFIG=./ansible.cfg" 
       ]
   }
 }
