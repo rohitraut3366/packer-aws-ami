@@ -7,7 +7,6 @@ pipeline{
             steps{
                 echo "Build Started"
                 git branch: 'master', url: 'https://github.com/rohitraut3366/packer-aws-ami.git'
-                sh "ls -a"
                 sh "packer build -force ."
                 echo "Build Ended"
             }
