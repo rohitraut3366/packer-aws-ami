@@ -36,7 +36,7 @@ source "amazon-ebs" "wordpress" {
   ssh_private_key_file = "./devops.pem"
   ssh_username  = "ubuntu"
   run_tags = {
-    Name = "Wordpress-${var.image_version}"  
+    Name = "Wordpress_${var.image_version}"  
   }
   tags = {
     Name = "Wordpress-${var.image_version}"
